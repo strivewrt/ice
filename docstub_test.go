@@ -17,7 +17,7 @@ package ice
 import (
 	"strings"
 
-	segment "github.com/blugelabs/bluge_segment_api"
+	segment "github.com/strivewrt/bluge_segment_api"
 )
 
 type FakeDocument []*FakeField

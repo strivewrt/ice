@@ -20,19 +20,19 @@ import (
 	"math"
 
 	"github.com/RoaringBitmap/roaring"
-	segment "github.com/blugelabs/bluge_segment_api"
+	segment "github.com/strivewrt/bluge_segment_api"
 )
 
 // FST or vellum value (uint64) encoding is determined by the top two
 // highest-order or most significant bits...
 //
-//  encoding  : MSB
-//  name      : 63  62  61...to...bit #0 (LSB)
-//  ----------+---+---+---------------------------------------------------
-//   general  : 0 | 0 | 62-bits of postingsOffset.
-//   ~        : 0 | 1 | reserved for future.
-//   1-hit    : 1 | 0 | 31-bits of positive float31 norm | 31-bits docNum.
-//   ~        : 1 | 1 | reserved for future.
+//	encoding  : MSB
+//	name      : 63  62  61...to...bit #0 (LSB)
+//	----------+---+---+---------------------------------------------------
+//	 general  : 0 | 0 | 62-bits of postingsOffset.
+//	 ~        : 0 | 1 | reserved for future.
+//	 1-hit    : 1 | 0 | 31-bits of positive float31 norm | 31-bits docNum.
+//	 ~        : 1 | 1 | reserved for future.
 //
 // Encoding "general" is able to handle all cases, where the
 // postingsOffset points to more information about the postings for

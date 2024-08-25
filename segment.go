@@ -24,7 +24,7 @@ import (
 
 	"github.com/RoaringBitmap/roaring"
 	"github.com/blevesearch/vellum"
-	segment "github.com/blugelabs/bluge_segment_api"
+	segment "github.com/strivewrt/bluge_segment_api"
 )
 
 const Version uint32 = 3

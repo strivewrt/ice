@@ -24,7 +24,7 @@ import (
 
 	"github.com/RoaringBitmap/roaring"
 	"github.com/blevesearch/mmap-go"
-	segment "github.com/blugelabs/bluge_segment_api"
+	segment "github.com/strivewrt/bluge_segment_api"
 )
 
 // various helpers to test with files, even though

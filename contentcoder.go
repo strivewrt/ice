@@ -19,7 +19,7 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/blugelabs/ice/compress"
+	"github.com/strivewrt/ice/compress"
 )
 
 var termSeparator byte = 0xff
@@ -176,7 +176,6 @@ func (c *chunkedContentCoder) Add(docNum uint64, vals []byte) error {
 //
 // | ..... data ..... | chunk offsets (varints)
 // | position of chunk offsets (uint64) | number of offsets (uint64) |
-//
 func (c *chunkedContentCoder) Write() (int, error) {
 	var tw int
 

@@ -18,7 +18,7 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	segment "github.com/blugelabs/bluge_segment_api"
+	segment "github.com/strivewrt/bluge_segment_api"
 )
 
 // Ice footer
