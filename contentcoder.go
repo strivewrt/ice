@@ -19,7 +19,7 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/strivewrt/ice/compress"
+	"github.com/strivewrt/ice/v2/compress"
 )
 
 var termSeparator byte = 0xff

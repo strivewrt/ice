@@ -5,7 +5,7 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/strivewrt/ice/compress"
+	"github.com/strivewrt/ice/v2/compress"
 )
 
 const defaultDocumentChunkSize uint32 = 128

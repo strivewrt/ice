@@ -17,7 +17,7 @@ package ice
 import (
 	"encoding/binary"
 
-	"github.com/strivewrt/ice/compress"
+	"github.com/strivewrt/ice/v2/compress"
 )
 
 func (s *Segment) initDecompressedStoredFieldChunks(n int) {

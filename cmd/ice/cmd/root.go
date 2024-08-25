@@ -23,7 +23,8 @@ import (
 	segment "github.com/strivewrt/bluge_segment_api"
 
 	"github.com/spf13/cobra"
-	"github.com/strivewrt/ice"
+
+	"github.com/strivewrt/ice/v2"
 )
 
 var seg *ice.Segment

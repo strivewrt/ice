@@ -19,7 +19,7 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/strivewrt/ice/compress"
+	"github.com/strivewrt/ice/v2/compress"
 )
 
 // We can safely use 0 to represent termNotEncoded since 0

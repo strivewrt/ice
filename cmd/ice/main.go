@@ -15,7 +15,7 @@
 package main
 
 import (
-	"github.com/strivewrt/ice/cmd/ice/cmd"
+	"github.com/strivewrt/ice/v2/cmd/ice/cmd"
 )
 
 func main() {

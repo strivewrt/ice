@@ -22,7 +22,8 @@ import (
 	"sort"
 
 	segment "github.com/strivewrt/bluge_segment_api"
-	"github.com/strivewrt/ice/compress"
+
+	"github.com/strivewrt/ice/v2/compress"
 )
 
 type docNumTermsVisitor func(docNum uint64, terms []byte) error
